@@ -22,10 +22,13 @@ public class RomanToInteger {
 
         System.out.println("The integer value is "+ convertToInteger(romanNumber,reference) );
     }
+    // 1.give meaning to the method name e.g convertRomanNumeralsToInteger
+    // 2.Before
+    // 3.make readability of inside for and if conditions more readable
     public static int convertToInteger(String romanNumber, Map<Character,Integer> referenceValues){
-        int i,number=0;
-        //iterating till the ee=nd of the string
-            for(i=0;i<romanNumber.length();i++){
+        int ii,number=0;
+        //iterating till the end of the string
+            for(int i=0;i<romanNumber.length();i++){
                 //comparing of the value of the present character is greater than the subsequent number. if so then just subtract from the subsequent value and
                 // skip the next element
                 //else just keep adding the corresponding values from the string
